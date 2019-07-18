@@ -14,12 +14,8 @@
 # Author: Marcelo Perazolo <mperazol@us.ibm.com>
 #---
 
-# OS-dependent settings
+    - name: subscribe
+      include_tasks: subscribe.yml
 
-packages:
-  - "python-pip"
-  - "ca-certificates"
-  - "curl"
-  - "wget"
-  - "socat"
-
+    - name: configure
+      include_tasks: configure.yml

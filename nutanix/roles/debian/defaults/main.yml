@@ -14,12 +14,4 @@
 # Author: Marcelo Perazolo <mperazol@us.ibm.com>
 #---
 
-# OS-dependent settings
-
-packages:
-  - "python-pip"
-  - "ca-certificates"
-  - "curl"
-  - "wget"
-  - "socat"
-
+# Debian defaults

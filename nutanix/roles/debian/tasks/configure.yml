@@ -14,12 +14,8 @@
 # Author: Marcelo Perazolo <mperazol@us.ibm.com>
 #---
 
-# OS-dependent settings
-
-packages:
-  - "python-pip"
-  - "ca-certificates"
-  - "curl"
-  - "wget"
-  - "socat"
-
+    - name: set max_map_count
+      shell: |
+        /sbin/sysctl -w vm.max_map_count=262144
+        /bin/echo "vm.max_map_count=262144" | /usr/bin/tee -a /etc/sysctl.conf
+        

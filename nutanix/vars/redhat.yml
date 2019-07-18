@@ -18,7 +18,6 @@
 
 certificate_url: "replace_with_url_of_your_cerfificate_host"
 certificate: "replace_with_your_certificate_name"
-
 registration_key: "replace_with_your_registration_key"
 
 repos:
@@ -32,3 +31,8 @@ extra_repos:
 
 packages:
   - "python-pip"
+  - "ca-certificates.noarch"
+  - "curl"
+  - "wget"
+  - "socat"
+
